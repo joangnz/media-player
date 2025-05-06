@@ -1,6 +1,6 @@
 .media-player {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin: 1rem 0;
 }
@@ -9,6 +9,37 @@ audio,
 video {
     max-width: 100%;
     height: auto;
+    margin-bottom: 1rem;
     border: 1px solid #ccc;
     border-radius: 8px;
+}
+
+.controls {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.volume-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+input[type='range'] {
+    cursor: pointer;
 }
